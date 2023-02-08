@@ -6,3 +6,7 @@ def count_vowels(word):
             resp = resp + 1
     return resp
 
+def order(input, order):
+    reverse = order == "desc"
+    input.sort(reverse=reverse)
+    return input
