@@ -4,7 +4,6 @@ import pytest
 
 @pytest.fixture
 def app():
-    #flask_app = create_app()
     yield flask_app
 
 @pytest.fixture
