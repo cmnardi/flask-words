@@ -36,14 +36,13 @@ class Sort(Resource):
             return Response(json.dumps({"errors":errors}), status=400, mimetype='application/json')
         return funcs.order(words, order)
 
-def create_app():
-    app = Flask(__name__)
-    api = Api(app)
-    api.add_resource(HealthCheck, '/')
-    api.add_resource(VowelCount, '/vowel_count')
-    api.add_resource(Sort, '/sort')
-    return app
+
+app = Flask(__name__)
+api = Api(app)
+api.add_resource(HealthCheck, '/')
+api.add_resource(VowelCount, '/vowel_count')
+api.add_resource(Sort, '/sort')
+
 
 if __name__ == '__main__':
-    app = create_app()
     app.run(debug=True)
