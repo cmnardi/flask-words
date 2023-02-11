@@ -13,7 +13,8 @@ custom:
  wsgi:
    app: main.app	
    packRequirements: false
-   pythonBin: python3
+   pythonBin: python
+   dockerizePip: "false"
 
 functions:
  app:
