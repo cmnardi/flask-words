@@ -16,8 +16,8 @@ python3 main.py
 ```
 ---
 ## Exemplos
-Na raiz do projeto foi adicionado um arquivo do [postman](flask_words.postman_collection.json) com exemplos de uso.
-É necessário apenas adicionar uma variavel de ambiente _{{host}}_
+> Na raiz do projeto foi adicionado um arquivo do [postman](flask_words.postman_collection.json) com exemplos de uso.
+> É necessário apenas adicionar uma variavel de ambiente _{{host}}_
 
 ### Ordenar POST [/order]
 Passando uma lista de palavras, é retornada a lista ordenada
