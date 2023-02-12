@@ -1,9 +1,6 @@
 on:
   push: 
-    branches: [ pylint ] 
-    paths:
-    - 'main.py' 
-    - 'funcs.py'
+    branches: [ pylint ]
 jobs:
   build:
     runs-on: ubuntu-latest 
